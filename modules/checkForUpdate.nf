@@ -5,7 +5,7 @@ process downloadAndCheck {
   container = 'veupathdb/checkforupdate'
 
   input:
-    tuple val(method), val(id), val(buildAbbrev), val(project)
+    tuple val(method), val(id), val(project), val(buildSubDir), val(abbrev)
     val ebiFtpUser
     val ebiFtpPassword
 

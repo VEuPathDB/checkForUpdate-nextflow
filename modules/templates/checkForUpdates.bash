@@ -2,11 +2,4 @@
 
 set -euo pipefail
 
-checkForUpdate.pl --method $method \
-		  --id $id \
-		  --buildAbbrev $buildAbbrev \
-		  --project $project \
-		  --storageDir storage \
-		  --outputFile needsUpdate.txt \
-		  --ebiFtpUser $ebiFtpUser \
-		  --ebiFtpPassword $ebiFtpPassword
+checkForUpdate.pl --method $method --id $id --project $project --buildSubDir $buildSubDir --abbrev $abbrev --ebiFtpUser $ebiFtpUser --ebiFtpPassword $ebiFtpPassword --storageDir storage --outputFile needsUpdate.txt
