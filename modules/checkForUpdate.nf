@@ -2,7 +2,7 @@
 nextflow.enable.dsl=2
 
 process downloadAndCheck {
-  container = 'veupathdb/checkforupdate'
+  container = 'veupathdb/checkforupdate:v1.0.0'
 
   input:
     tuple val(method), val(id), val(project), val(buildSubDir), val(abbrev)
